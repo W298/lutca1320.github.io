@@ -8,7 +8,7 @@ tags: [processing3]
 [Processing 3](https://processing.org/) 를 이용해 미니언즈 (라고 주장하는) 를 그려 보았다.
 
 ### 스크린샷
-![스크린샷 2020-04-09 오후 7.22.16](/assets/스크린샷%202020-04-09%20오후%207.22.16.png)
+![minions](https://i.imgur.com/4MmXK5U.png)
 
 ### 소스코드
 s 값을 이용해 캐릭터의 크기를 조절할 수 있다.
