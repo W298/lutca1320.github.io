@@ -8,35 +8,29 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Chirpy                          # the main title
+title: RUKA SPROUT                          # the main title
 
-tagline: A text-focused Jekyll theme.  # it will display as the sub-title
+tagline: Unreal Engine Game Developer  # it will display as the sub-title
 
-description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+description:
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'protocol://domain'
+url: 'https://lutca1320.github.io'
 
-author: your_full_name                  # change to your full name
+author: RUKA SPROUT                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: /assets/img/avatar.png   # support internet resources
 
 github:
-  username: github_username             # change to your github username
-
-twitter:
-  username: twitter_username            # change to your twitter username
+  username: lutca1320             # change to your github username
 
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  name: RUKA SPROUT                  # it will shows as the copyright owner in Footer
+  email: lutca1320@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    # https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/lutca1320      # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -49,7 +43,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Asia/Seoul
 
 google_analytics:
   # Fill with your Google Analytics ID
@@ -78,7 +72,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: dual
+theme_mode: light
 
 # boolean type, global switch for ToC in posts.
 toc: true
