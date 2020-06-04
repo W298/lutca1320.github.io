@@ -45,8 +45,8 @@ void func(int p1, int p2); // 중복 함수
 template <class T>
 class Base
 {
-		T ary[100];
-		...
+    T ary[100];
+	...
 }
 ```
 
