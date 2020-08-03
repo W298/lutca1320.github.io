@@ -11,11 +11,11 @@ tags: [programming]
 ```cpp
 try
 {
-	cout << v.at(3);
+    cout << v.at(3);
 }
 catch (std::exception& ex) // 타입을 std::exception& 으로 받는다.
 {
-	cout << ex.what() << endl; // what() 메소드로 에러 내용을 표시한다.
+    cout << ex.what() << endl; // what() 메소드로 에러 내용을 표시한다.
 }
 ```
 
@@ -26,13 +26,13 @@ catch (std::exception& ex) // 타입을 std::exception& 으로 받는다.
 ```cpp
 try
 {
-	cin >> n;
+    cin >> n;
 
-	if (n > v.size())
-		throw n; // n 값을 던짐
+    if (n > v.size())
+	throw n; // n 값을 던짐
 }
 catch (int ex) // ex 값으로 받음
 {
-	cout << n << " is out of range" << endl;
+    cout << n << " is out of range" << endl;
 }
 ```
