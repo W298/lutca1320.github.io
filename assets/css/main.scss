@@ -67,7 +67,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Gothic A1', sans-serif;
 }
 
 /*--- sidebar layout ---*/
@@ -428,7 +428,7 @@ $tab-count: {{ site.data.tabs | size }};
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: Noto Sans KR;
+  font-family: Gothic A1;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
