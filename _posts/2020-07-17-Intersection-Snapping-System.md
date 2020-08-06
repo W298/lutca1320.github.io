@@ -1,7 +1,7 @@
 ---
-title: 도로 제작 - Snapping 시스템
+title: 도로 제작 - 2. Snapping 시스템
 author: RUKA SPROUT
-date: 2020-07-23 18:54:00 +0900
+date: 2020-07-17 18:54:00 +0900
 categories: [Game Dev - Intersection]
 tags: [Unity]
 ---
@@ -131,7 +131,7 @@ last_pos 이라는 전역 변수가 있는데, 이는 그리드에 Snapping 된 
 
 이 함수의 치명적인 문제점이 있는데, **마우스가 위의 그림 Grid 를 벗어나면 Snapping 이 불가능** 하다는 것이다. 만약 마우스를 매우 빠르게 움직이거나 줌을 통해 마우스의 위치가 이동될 때, 아래 그림처럼 마우스의 위치가 last_pos 을 기준으로 한 Grid 에서 벗어나게 된다면, 위 코드는 작동되지 않는다.
 
-![주석 2020-08-03 154103](https://i.imgur.com/Fgtq92w.png)
+![주석 2020-08-05 234557](https://i.imgur.com/8YM9kV0.png)
 
 위 함수를 고쳐서 다시 만들 수도 있지만... 더 쉬운 방법이 있다.
 
