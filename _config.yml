@@ -47,7 +47,7 @@ timezone: Asia/Seoul
 
 google_analytics:
   # Fill with your Google Analytics ID
-  id: ''
+  id: 'UA-139994581-3'
   # The Google Analytics pageviews switch.
 
   pv:
