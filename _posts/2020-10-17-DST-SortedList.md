@@ -1,5 +1,5 @@
 ---
-title: Data Structure - UnsortedList
+title: Data Structure - SortedList
 author: RUKA SPROUT
 date: 2020-10-17 16:54:00 +0900
 categories: [Data Structure]
