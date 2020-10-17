@@ -10,7 +10,7 @@
 
 title: ruka                         # the main title
 
-tagline: Game Developer & Software Devloper  # it will display as the sub-title
+tagline: Game Dev & Software Dev  # it will display as the sub-title
 
 description:
 
@@ -72,7 +72,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: light
+theme_mode: dark
 
 # boolean type, global switch for ToC in posts.
 toc: true
