@@ -1,5 +1,5 @@
 ---
-title: A* Algorithm - Pathfinding
+title: A* 알고리즘 - 길찾기 알고리즘
 author: RUKA SPROUT
 date: 2020-10-28 22:30:00 +0900
 categories: [Algorithm]
@@ -15,12 +15,11 @@ tags: [programming, pathfinding]
 ## 개요
 `A*` 알고리즘은 길찾기 (Pathfinding) 에 자주 사용되는 알고리즘이다. `A*` 알고리즘은 다익스트라 (Dijkstra) 알고리즘의 업드레이드 버젼이라고 생각하면 쉽다. `A*` 는 다익스트라 알고리즘처럼 최단 거리를 보장하지는 없지만, 검색 속도가 빠르다.
 
-위의 예시 경로를 탐색하는 방법을 하나씩 확인함으로써 알고리즘을 설명해 보겠다.
+위의 예시 경로를 탐색하는 방법을 하나씩 확인함으로써 알고리즘을 설명해 보겠다. 코드로 구현하는 것은 다음 포스트에 담도록 하겠다.
 
-포스트를 쓰면서 첨부한 모든 사진의 프로그램은 직접 Python Tkinter 를 사용해 만들었다.
+포스트를 쓰면서 첨부한 모든 사진의 프로그램은 직접 `Python Tkinter` 를 사용해 만들었다.
 
 - [Visualizer](https://github.com/lutca1320/Astar-Visualizer-Python/blob/master/main.py){: target="_blank"} : GUI 비주얼라이져
-
 - [Core Code](https://github.com/lutca1320/Astar-Visualizer-Python/blob/master/core_code.py){: target="_blank"} : A* 알고리즘 코드
 
 ---
@@ -66,7 +65,9 @@ H 값을 구하는 방법은 다음과 같이 생각해볼 수 있다.
 - **OPEN 은 '탐색 되어져야 하는 노드들의 리스트'** (초록색)
 - **CLOSED 는 '이미 탐색된 노드들의 리스트'** (빨간색)
 
-`A*` 알고리즘은 OPEN 리스트에서 노드를 꺼내 적절한 노드를 CLOSED 리스트에 넣는 식으로 작동한다. 이는 아래에서 예시로 설명하겠다.
+![a 56](https://i.imgur.com/iN85RhB.png)
+
+`A*` 알고리즘은 OPEN 리스트에서 노드를 꺼내 적절한 노드를 CLOSED 리스트에 넣는 절차로 작동한다. 이는 아래에서 예시로 설명하겠다.
 
 
 ---
