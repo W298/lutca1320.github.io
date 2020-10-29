@@ -12,16 +12,21 @@ tags: [programming, pathfinding]
 ---
 
 
-### 개요
+## 개요
 `A*` 알고리즘은 길찾기 (Pathfinding) 에 자주 사용되는 알고리즘이다. `A*` 알고리즘은 다익스트라 (Dijkstra) 알고리즘의 업드레이드 버젼이라고 생각하면 쉽다. `A*` 는 다익스트라 알고리즘처럼 최단 거리를 보장하지는 없지만, 검색 속도가 빠르다.
 
 위의 예시 경로를 탐색하는 방법을 하나씩 확인함으로써 알고리즘을 설명해 보겠다.
 
+포스트를 쓰면서 첨부한 모든 사진의 프로그램은 직접 Python Tkinter 를 사용해 만들었다.
+
+- [Visualizer](https://github.com/lutca1320/Astar-Visualizer-Python/blob/master/main.py){: target="_blank"} : GUI 비주얼라이져
+
+- [Core Code](https://github.com/lutca1320/Astar-Visualizer-Python/blob/master/core_code.py){: target="_blank"} : A* 알고리즘 코드
 
 ---
 
 
-### 개념 설명
+## 개념 설명
 
 그 전에, 아래 그림을 이해할 필요가 있다.
 
@@ -29,16 +34,19 @@ tags: [programming, pathfinding]
 
 ![a 00](https://i.imgur.com/EklAnDO.png)
 
-#### 1. FGH 값
+#### **1. FGH 값**
 
 각 노드들에 숫자 3개가 적혀져 있는데, 이는 다음과 같은 의미를 가진다.
 
 ![fgh](https://i.imgur.com/qpTyg6h.png)
 
 - **G 값은 출발 노드부터 현재 노드까지의 경로의 길이**다. 그렇기 떄문에 출발 노드의 G 값은 0이 된다.
-- **H (휴리스틱 함수) 값은 현재 노드에서 도착 노드까지의 '예상 경로' 길이**다. '예상 경로' 이기 떄문에 이는 추정으로만 구할 수 있는데, **장애물은 고려하지 않고 계산**한다. 방법은 다음과 같이 생각해볼 수 있다.
-    - 유클리드 거리로 계산 : 실제 두 노드의 좌표의 거리를 계산한다.
-    - 인덱스 거리로 계산 : 두 노드의 인덱스(i, j) 차이를 이용해 거리를 계산한다.
+- **H (휴리스틱 함수) 값은 현재 노드에서 도착 노드까지의 '예상 경로' 길이**다. '예상 경로' 이기 떄문에 이는 추정으로만 구할 수 있는데, **장애물은 고려하지 않고 계산**한다.
+
+
+H 값을 구하는 방법은 다음과 같이 생각해볼 수 있다.
+- 유클리드 거리로 계산 : 실제 두 노드의 좌표의 거리를 계산한다.
+- 인덱스 거리로 계산 : 두 노드의 인덱스(i, j) 차이를 이용해 거리를 계산한다.
 
 ![index](https://i.imgur.com/KncXuvD.png)
 
@@ -51,7 +59,7 @@ tags: [programming, pathfinding]
 
 이를 코드로 구현하는 법은 나중에 따로 다루도록 하겠다.
 
-#### 2. OPEN, CLOSED 리스트
+#### **2. OPEN, CLOSED 리스트**
 
 위 그림에서 보면, 출발 노드의 색깔이 초록색인 것을 확인할 수 있다. 이는 OPEN 리스트에 추가되어 있는 것을 의미하는데, 이는 다음과 같은 의미를 가지고 있다.
 
@@ -64,7 +72,7 @@ tags: [programming, pathfinding]
 ---
 
 
-### 어떻게 작동하는가?
+## 어떻게 작동하는가?
 
 자, 그럼 이제 실제 어떤 절차로 경로를 구하는지 하나씩 살펴보자.
 
@@ -185,7 +193,5 @@ tags: [programming, pathfinding]
 ---
 
 ### 다른 예시
-
-굳. 포스트를 쓰면서 첨부한 모든 사진의 프로그램은 직접 Python Tkinter 를 사용해 만들었다.
 
 ![ex](https://i.imgur.com/LXXsJwb.png)
