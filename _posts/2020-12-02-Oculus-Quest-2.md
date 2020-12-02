@@ -1,7 +1,7 @@
 ---
 title: Oculus Quest 2 - 구매기
 author: RUKA SPROUT
-date: 2020-08-26 17:32:00 +0900
+date: 2020-12-02 17:32:00 +0900
 categories: [VR]
 tags: [oculus]
 ---
